@@ -83,7 +83,6 @@ public class AutoUpdateService extends Service {
                 public void onFailure(Call call, IOException e) {
                     e.printStackTrace();
                 }
-
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
                     String responseText=response.body().string();
